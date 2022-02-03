@@ -1,0 +1,10 @@
+#https://docs.rundeck.com/docs/learning/howto/using-ansible.html
+#  ansible-playbook ansible-exapmle-node-poweroff.yaml --ask-pass --become-user=root --ask-become-pass --become 
+
+- name: test playbook
+  hosts: all
+  tasks:
+    - shell: poweroff
+      ignore_errors: yes
+      register: uname_result
+    - debug: msg="{{ uname_result.stdout }}"
