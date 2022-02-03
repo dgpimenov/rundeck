@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Gather Version
+    debug:
+     msg: "The server Operating system is {{ ansible_distribution }} {{ ansible_distribution_major_version }}"
+  - name: Write  Version
+    local_action: shell echo "This is  {{ ansible_distribution }} {{ ansible_distribution_major_version }}" >> /tmp/output
+
