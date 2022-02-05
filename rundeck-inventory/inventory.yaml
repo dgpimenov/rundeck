@@ -1,9 +1,9 @@
-cs-msk-5-sw-1.local:
-  description: The production redis server.
-  hostname: 192.168.123.111
-  nodename: cs-msk-5-sw-1
+k8s-worker-1.local:
+  description: Kuber worker.
+  hostname: 192.168.123.160
+  nodename: k8s-worker-1
   osArch: x86_64
   osFamily: unix
   osName: Linux
   tags: 'redis_server,production'
-  username: huawei
+  username: k8s
