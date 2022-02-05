@@ -7,3 +7,12 @@ k8s-worker-1.local:
   osName: Linux
   tags: 'kuber, worker'
   username: k8s
+k8s-worker-2.local:
+  description: Kuber worker
+  hostname: 192.168.123.160
+  nodename: k8s-worker-2
+  osArch: x86_64
+  osFamily: unix
+  osName: Linux
+  tags: 'kuber, worker'
+  username: k8s
