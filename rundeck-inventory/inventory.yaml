@@ -1,9 +1,9 @@
 k8s-worker-1.local:
-  description: Kuber worker.
+  description: Kuber worker
   hostname: 192.168.123.160
   nodename: k8s-worker-1
   osArch: x86_64
   osFamily: unix
   osName: Linux
-  tags: 'redis_server,production'
+  tags: 'kuber, worker'
   username: k8s
